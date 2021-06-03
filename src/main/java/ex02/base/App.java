@@ -17,8 +17,23 @@ If the user enters nothing, state that the user must enter something into the pr
 Implement this program using a graphical user interface and update the character counter every time a key is pressed. If your language doesn’t have a particularly friendly GUI library, try doing this exercise with HTML and JavaScript instead.
 */
 public class App {
+    Scanner in = new Scanner(System.in);
     public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
+        App myApp = new App();
+
+        String inputString = myApp.readString();
+
+        myApp.displayString(inputString);
 
     }
+    public String readString(){
+        System.out.print("What is the input string? ");
+        String input = in.nextLine();
+        return input;
+    }
+
+    public void displayString(String input){
+        System.out.printf("%s has %d characters.",input,input.length());
+    }
+
 }
