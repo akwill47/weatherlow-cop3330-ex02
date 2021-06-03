@@ -1,4 +1,5 @@
 package ex02.base;
+import java.util.Scanner;
 
 /*
 Exercise 2 - Counting the Number of Characters
@@ -16,5 +17,8 @@ If the user enters nothing, state that the user must enter something into the pr
 Implement this program using a graphical user interface and update the character counter every time a key is pressed. If your language doesn’t have a particularly friendly GUI library, try doing this exercise with HTML and JavaScript instead.
 */
 public class App {
-    
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+
+    }
 }
