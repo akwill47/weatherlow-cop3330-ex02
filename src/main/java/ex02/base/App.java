@@ -26,13 +26,13 @@ public class App {
         myApp.displayString(inputString);
 
     }
-    public String readString(){
+    private String readString(){
         System.out.print("What is the input string? ");
         String input = in.nextLine();
         return input;
     }
 
-    public void displayString(String input){
+    private void displayString(String input){
         System.out.printf("%s has %d characters.",input,input.length());
     }
 
